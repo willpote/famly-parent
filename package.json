@@ -1,0 +1,31 @@
+{
+  "name": "famly-parent",
+  "version": "0.1.0",
+  "description": "Unofficial CLI for parents to read their child's data from Famly (feed, naps, meals, nappies).",
+  "type": "module",
+  "bin": {
+    "famly-parent": "bin/famly-parent.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node bin/famly-parent.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

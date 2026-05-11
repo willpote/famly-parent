@@ -1,0 +1,21 @@
+# Deps
+node_modules/
+*.tsbuildinfo
+
+# dist/ is intentionally committed so that `npm install -g github:...` works
+# without needing the TypeScript toolchain at install time. Rebuild it
+# (`npm run build`) before committing source changes.
+
+# Env / secret files (defensive — not currently used)
+.env
+.env.*
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
+
+# IMPORTANT: the access token is stored at ~/.config/famly-parent/config.json,
+# which lives outside the repo. Never copy that file into the working tree.
